@@ -223,7 +223,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 13.43
+  orthographic size: 15
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -247,7 +247,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.02, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -499,6 +499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerScore: 1
   scoreText: {fileID: 2047440762}
+  gameOverScreen: {fileID: 1962732498}
 --- !u!4 &1387278121
 Transform:
   m_ObjectHideFlags: 0
@@ -634,8 +635,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bff61a01732df94cb1698615c21ca24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  logic: {fileID: 0}
   birdRigidbody: {fileID: 1548615986}
   flapStrength: 6
+  birdIsAlive: 1
 --- !u!58 &1548615988
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -815,7 +818,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1962732499
 RectTransform:
   m_ObjectHideFlags: 0
